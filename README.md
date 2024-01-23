@@ -101,8 +101,6 @@ Follow these steps to create a Jenkins job for building and deploying your Java 
 
 - Apply and save the configuration.
 
-  ![webserver-output](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/tomcat%20final%20output.png)
-
 Access your deployed web application at http://your-ip-address/javaweb.
 
   ![webserver-output](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/tomcat%20final%20output.png)
