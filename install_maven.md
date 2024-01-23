@@ -90,9 +90,6 @@ mvn -version
 ```
 
 ### 5. Installing Plugin "Maven Invoker"
-
-![maven-involer](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/mavin-invoker%20plugin.png)
-
 - Jenkins dashboard on JMaster
 - Manage Jenkins
 - Manage Plugins
@@ -100,8 +97,9 @@ mvn -version
     - Search: Maven Invoker
 - Install without restart
 
+  ![maven-involer](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/mavin-invoker%20plugin.png)
+
 ### 6. Specifying JAVA_HOME and M2_HOME Path in Jenkins
-```markdown
 - Jenkins dashboard
 - Manage Jenkins
     - Global Tool Configuration
@@ -111,13 +109,14 @@ mvn -version
             - Uncheck "Install automatically"
 
         - Add Maven
-![maven-instal](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/mavin%20install%20on%20jenkins.png)
+          
+          ![maven-instal](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/mavin%20install%20on%20jenkins.png)
+          
             - Name: Maven
             - MAVEN_HOME: /opt/apache-maven-<version>
             - Uncheck "Install automatically"
 
 Apply and Save
-```
 
 ### 7. Creating Java-Based Web Application Using Maven
 ```bash
