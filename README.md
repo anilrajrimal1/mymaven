@@ -82,8 +82,9 @@ Follow these steps to create a Jenkins job for building and deploying your Java 
 - Open Jenkins dashboard.
 
 - Create a new freestyle project.
-  ![freestyle-job](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/create%20jenkins%20job.png)
 
+  ![freestyle-job](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/create%20jenkins%20job.png)
+  
 - Set Git repository URL and credentials.
   ![git-code](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/add%20repo%20to%20job.png)
 
