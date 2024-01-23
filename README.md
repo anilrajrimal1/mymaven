@@ -1,6 +1,6 @@
 # Project 4: CI/CD Setup with GitHub, Jenkins, Maven & Tomcat
 
-![project-image](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/project%20image.png)
+  ![project-image](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/project%20image.png)
 
 ## Overview
 
@@ -61,7 +61,7 @@ git push origin master
 ```
 ### Install the "Deploy to Container" Plugin in Jenkins Master
 Ensure the Jenkins master is set up with the necessary plugins.
-![deploy-plugin](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/Deploy%20to%20container%20plugin%20download.png)
+  ![deploy-plugin](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/Deploy%20to%20container%20plugin%20download.png)
 ```markdown
 - Open Jenkins dashboard.
 - Navigate to "Manage Jenkins" 
@@ -71,7 +71,7 @@ Ensure the Jenkins master is set up with the necessary plugins.
 - Install the plugin without restarting Jenkins.
 ```
 Start and enable the NTP server:
-![start-enable](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/chronyd%20setup.png)
+  ![start-enable](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/chronyd%20setup.png)
 ```bash
 systemctl start chronyd
 systemctl enable chronyd
@@ -101,10 +101,11 @@ Follow these steps to create a Jenkins job for building and deploying your Java 
 
 - Apply and save the configuration.
 
+  ![webserver-output](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/tomcat%20final%20output.png)
+
 Access your deployed web application at http://your-ip-address/javaweb.
 
-Console Output:
-![console-output](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/create%20maven%20app.png)
+  ![webserver-output](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/tomcat%20final%20output.png)
 
-Webserver Output:
-![webserver-output](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/tomcat%20final%20output.png)
+
+
