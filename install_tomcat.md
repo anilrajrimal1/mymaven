@@ -56,6 +56,8 @@ cd /opt
 ```
 - Download and extract Apache Tomcat
 
+![download](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/download%20apache.png)
+
 goto the Apache Tomcat official site and copy .tar.gz link
 
 ```bash
@@ -64,6 +66,9 @@ wget <paste the copied link>
 ```bash
 tar -zxvf <downloaded file>.tar.gz
 ```
+
+![tomcat](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/soft%20link%20apache.png)
+
 ```bash
 cd /opt/apache-<tab>/bin
 ```
@@ -80,9 +85,13 @@ echo $?  #zero indicates success
 cd /opt/apache-tomcat<tab>/conf
 vi server.xml
 ```
-Search for connector port, and modify it to 8090.
+Search for the connector port, and modify it to 8090.
+
+![connector-port](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/apache-port%20change%20to%208090.png)
 
 ### 5. Allow the 8090 Port in the Firewall
+
+![reload-all](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/allow%208090%20in%20firewall.png)
 
 ```bash
 firewall-cmd --permanent --add-port=8090/tcp
@@ -97,12 +106,16 @@ vi context.xml
 ```
 Search for Valve and comment it using <!-- ... -->.
 
+![host-mgnr](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/context%20xml%20change%20(host-manager).png)
+
 again goto 
 ```bash
 cd /opt/apache-tomcat<tab>/webapps/manager/META-INF
 vi context.xml
 ```
 Search for Valve and comment it using <!-- ... -->.
+
+![manaeger](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/context%20xml%20change%20(manager).png)
 
 Open a browser locally or remotely to test the Apache Tomcat server: URL: http://your-ip-address:8090
 
@@ -112,6 +125,8 @@ cd /opt/apache-tomcat<tab>/conf
 vi tomcat-users.xml
 ```
 Add the following lines to tomcat-users.xml:
+
+![role-setup](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/setup%20manager%20app.png)
 
 ```bash
 <role rolename="Manager-gui"/>
@@ -125,6 +140,9 @@ Add the following lines to tomcat-users.xml:
 Save and exit.
 
 ### 8. Refresh the Changes
+
+![refresh-change](https://github.com/anilrajrimal1/mymaven/blob/master/screenshots/tomcat%20refresh.png)
+
 ```bash
 tomcatdown
 tomcatup
